@@ -17,6 +17,7 @@ JSON Endpoint: http://52.26.30.44/catalog/JSON
 ### 2 -  Install updates
 * Updates the list of available packages and versions for upgrade `sudo apt-get update`</br>
 * Installs newer versions of the packages `sudo apt-get upgrade`</br>
+* Upon logging in, status shows 0 packages can be updated.
 
 ### 3 - Create user grader
 * Create new user grader `sudo adduser grader`</br>
@@ -52,6 +53,7 @@ JSON Endpoint: http://52.26.30.44/catalog/JSON
     sudo ufw allow 2200/tcp
     sudo ufw allow www
     sudo ufw allow 123/udp
+    sudo ufw deny 22
     sudo ufw default deny incoming
     sudo ufw default allow outgoing
     sudo ufw enable
